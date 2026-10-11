@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "octobot-tentacles-manager"
+version = "2.10.0+ayu.1"
+readme = "README.md"
+requires-python = ">=3.13"
+license = "LGPL-3.0-or-later"
+dependencies = ["octobot-commons>=1.10,<1.11", "aiofiles", "aiohttp", "packaging"]
+[project.optional-dependencies]
+full = ["octobot-commons[full]>=1.10,<1.11", "Cython", "jinja2", "PyYAML", "aioboto3"]
+[tool.hatch.build.targets.wheel]
+packages = ["src/octobot_tentacles_manager"]

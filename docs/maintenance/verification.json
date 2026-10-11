@@ -1,0 +1,468 @@
+{
+  "repo": "OctoBot-Evaluators",
+  "checks": [
+    {
+      "command": [
+        "uv",
+        "lock",
+        "--upgrade",
+        "--python",
+        "3.15"
+      ],
+      "label": "lock-3.15",
+      "exit_code": 0,
+      "seconds": 1.37,
+      "log": "OctoBot-Evaluators-lock-3.15.log"
+    },
+    {
+      "command": [
+        "uv",
+        "sync",
+        "--all-extras",
+        "--python",
+        "3.15"
+      ],
+      "label": "sync-3.15",
+      "exit_code": 2,
+      "seconds": 0.04,
+      "log": "OctoBot-Evaluators-sync-3.15.log"
+    },
+    {
+      "command": [
+        "uv",
+        "lock",
+        "--upgrade",
+        "--python",
+        "3.14"
+      ],
+      "label": "lock-3.14",
+      "exit_code": 0,
+      "seconds": 0.88,
+      "log": "OctoBot-Evaluators-lock-3.14.log"
+    },
+    {
+      "command": [
+        "uv",
+        "sync",
+        "--all-extras",
+        "--python",
+        "3.14"
+      ],
+      "label": "sync-3.14",
+      "exit_code": 0,
+      "seconds": 1.37,
+      "log": "OctoBot-Evaluators-sync-3.14.log"
+    },
+    {
+      "command": [
+        "uv",
+        "build",
+        "--python",
+        "3.14"
+      ],
+      "label": "build",
+      "exit_code": 0,
+      "seconds": 1.04,
+      "log": "OctoBot-Evaluators-build.log"
+    },
+    {
+      "command": [
+        "/Users/alex/workspaces/trading/OctoBot-Evaluators/.venv/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "src"
+      ],
+      "label": "compile",
+      "exit_code": 0,
+      "seconds": 0.13,
+      "log": "OctoBot-Evaluators-compile.log"
+    },
+    {
+      "command": [
+        "/Users/alex/workspaces/trading/OctoBot-Evaluators/.venv/bin/python",
+        "-m",
+        "pytest",
+        "tests"
+      ],
+      "label": "tests",
+      "exit_code": 2,
+      "seconds": 2.39,
+      "log": "OctoBot-Evaluators-tests.log"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "pytest",
+        "tests"
+      ],
+      "label": "tests-2",
+      "exit_code": 1,
+      "seconds": 8.46,
+      "log": "OctoBot-Evaluators-tests-2.log"
+    },
+    {
+      "command": [
+        "uv",
+        "sync",
+        "--all-extras",
+        "--python",
+        "3.14"
+      ],
+      "label": "local-manager-sync",
+      "exit_code": 0,
+      "seconds": 1.85,
+      "log": "OctoBot-Evaluators-local-manager-sync.log"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "pytest",
+        "tests"
+      ],
+      "label": "tests-3",
+      "exit_code": 2,
+      "seconds": 2.19,
+      "log": "OctoBot-Evaluators-tests-3.log"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "pytest",
+        "tests"
+      ],
+      "label": "tests-4",
+      "exit_code": 2,
+      "seconds": 2.16,
+      "log": "OctoBot-Evaluators-tests-4.log"
+    },
+    {
+      "command": [
+        "uv",
+        "sync",
+        "--all-extras",
+        "--python",
+        "3.14"
+      ],
+      "label": "updated-manager-sync",
+      "exit_code": 0,
+      "seconds": 0.61,
+      "log": "OctoBot-Evaluators-updated-manager-sync.log"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "pytest",
+        "tests"
+      ],
+      "label": "tests-5",
+      "exit_code": 2,
+      "seconds": 2.15,
+      "log": "OctoBot-Evaluators-tests-5.log"
+    },
+    {
+      "command": [
+        "uv",
+        "sync",
+        "--all-extras",
+        "--python",
+        "3.14"
+      ],
+      "label": "public-manager-sync",
+      "exit_code": 0,
+      "seconds": 1.12,
+      "log": "OctoBot-Evaluators-public-manager-sync.log"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "pytest",
+        "tests"
+      ],
+      "label": "tests-6",
+      "exit_code": 1,
+      "seconds": 3.34,
+      "log": "OctoBot-Evaluators-tests-6.log"
+    },
+    {
+      "command": [
+        "uv",
+        "lock",
+        "--upgrade"
+      ],
+      "label": "final-lock",
+      "exit_code": 0,
+      "seconds": 0.25,
+      "log": "OctoBot-Evaluators-final-lock.log"
+    },
+    {
+      "command": [
+        "uv",
+        "sync",
+        "--all-extras",
+        "--frozen",
+        "--python",
+        "3.14.8"
+      ],
+      "label": "final-sync",
+      "exit_code": 0,
+      "seconds": 0.08,
+      "log": "OctoBot-Evaluators-final-sync.log"
+    },
+    {
+      "command": [
+        "uv",
+        "build",
+        "--python",
+        "3.14.8"
+      ],
+      "label": "final-build",
+      "exit_code": 0,
+      "seconds": 1.25,
+      "log": "OctoBot-Evaluators-final-build.log"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "src"
+      ],
+      "label": "final-compile",
+      "exit_code": 0,
+      "seconds": 0.07,
+      "log": "OctoBot-Evaluators-final-compile.log"
+    },
+    {
+      "command": [
+        "uv",
+        "sync",
+        "--all-extras",
+        "--python",
+        "3.14.8"
+      ],
+      "label": "directory-resource-sync",
+      "exit_code": 0,
+      "seconds": 0.77,
+      "log": "OctoBot-Evaluators-directory-resource-sync.log"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "pytest",
+        "tests"
+      ],
+      "label": "final-existing-tests",
+      "exit_code": 2,
+      "seconds": 1.13,
+      "log": "OctoBot-Evaluators-final-existing-tests.log"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "pytest",
+        "tests"
+      ],
+      "label": "final-existing-tests-2",
+      "exit_code": 0,
+      "seconds": 1.39,
+      "log": "OctoBot-Evaluators-final-existing-tests-2.log"
+    },
+    {
+      "command": [
+        "uv",
+        "lock",
+        "--upgrade"
+      ],
+      "label": "final-lock-2",
+      "exit_code": 0,
+      "seconds": 0.41,
+      "log": "OctoBot-Evaluators-final-lock-2.log"
+    },
+    {
+      "command": [
+        "uv",
+        "sync",
+        "--all-extras",
+        "--frozen",
+        "--python",
+        "3.14.8"
+      ],
+      "label": "final-sync-2",
+      "exit_code": 0,
+      "seconds": 0.56,
+      "log": "OctoBot-Evaluators-final-sync-2.log"
+    },
+    {
+      "command": [
+        "uv",
+        "build",
+        "--python",
+        "3.14.8"
+      ],
+      "label": "final-build-2",
+      "exit_code": 0,
+      "seconds": 0.89,
+      "log": "OctoBot-Evaluators-final-build-2.log"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "src"
+      ],
+      "label": "final-compile-2",
+      "exit_code": 0,
+      "seconds": 0.07,
+      "log": "OctoBot-Evaluators-final-compile-2.log"
+    }
+  ],
+  "started": "2026-10-12T00:13:20+0800",
+  "python": "3.14.8",
+  "head": "642e39f3092a56fe0de5f1d871a689099bffd98c",
+  "branch": "feature/ayu_develop",
+  "runtime_inventory": {
+    "executable": "/Users/alex/workspaces/trading/OctoBot-Evaluators/.venv/bin/python",
+    "packages": {
+      "Cython": "3.3.0",
+      "Jinja2": "3.1.6",
+      "MarkupSafe": "3.0.4",
+      "OctoBot-Tulipy": "0.4.11b13",
+      "PyYAML": "6.0.3",
+      "Pygments": "2.21.0",
+      "aioboto3": "15.5.0",
+      "aiobotocore": "2.25.1",
+      "aiofiles": "25.1.0",
+      "aiohappyeyeballs": "2.7.1",
+      "aiohttp": "3.14.5",
+      "aioitertools": "0.13.0",
+      "aiosignal": "1.4.0",
+      "aiosqlite": "0.22.1",
+      "async_channel": "2.2.2",
+      "attrs": "26.1.0",
+      "boto3": "1.40.61",
+      "botocore": "1.40.61",
+      "certifi": "2026.7.22",
+      "cffi": "2.1.1",
+      "charset-normalizer": "3.5.2",
+      "coverage": "7.16.2",
+      "cryptography": "50.0.2",
+      "execnet": "2.1.2",
+      "frozenlist": "1.8.0",
+      "idna": "3.20",
+      "iniconfig": "2.3.1",
+      "jmespath": "1.1.0",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "mock": "5.2.0",
+      "multidict": "6.9.1",
+      "numpy": "2.5.4",
+      "octobot-commons": "1.10.6",
+      "octobot-evaluators": "1.10.1",
+      "octobot-tentacles-manager": "2.10.0+ayu.1",
+      "packaging": "26.3",
+      "pluggy": "1.6.0",
+      "propcache": "0.5.4",
+      "psutil": "7.2.2",
+      "pycparser": "3.11",
+      "pytest": "9.1.1",
+      "pytest-asyncio": "1.4.0",
+      "pytest-cov": "7.1.0",
+      "pytest-timeout": "2.4.0",
+      "pytest-xdist": "3.8.0",
+      "python-dateutil": "2.9.0.post0",
+      "referencing": "0.37.0",
+      "requests": "2.34.2",
+      "rpds-py": "2026.9.1",
+      "ruff": "0.17.0",
+      "s3transfer": "0.14.0",
+      "six": "1.17.0",
+      "sortedcontainers": "2.4.0",
+      "urllib3": "2.8.0",
+      "wrapt": "1.17.3",
+      "yarl": "1.25.1"
+    },
+    "python": "3.14.8 (main, Oct  9 2026, 15:11:09) [Clang 22.1.3 ]"
+  },
+  "validation_updated": "2026-10-12T01:32:44.003848+08:00",
+  "python_decision": "Tulipy 0.4.11b13 has no Python 3.15 distribution; Python 3.14.8 is selected.",
+  "outcome_notes": "Existing evaluator suite passes with the LGPL manager 2.10.0 compatibility source: directory iterators close on early matches, and packaging.version replaces removed distutils. See vendor/tentacles-manager/PROVENANCE.md.",
+  "selected_test": {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "pytest",
+      "tests"
+    ],
+    "label": "final-existing-tests-2",
+    "exit_code": 0,
+    "seconds": 1.39,
+    "log": "OctoBot-Evaluators-final-existing-tests-2.log"
+  },
+  "test_summary": "57 passed in 0.98s",
+  "status": "passed",
+  "final_checks": {
+    "lock": {
+      "command": [
+        "uv",
+        "lock",
+        "--upgrade"
+      ],
+      "label": "final-lock-2",
+      "exit_code": 0,
+      "seconds": 0.41,
+      "log": "OctoBot-Evaluators-final-lock-2.log"
+    },
+    "sync": {
+      "command": [
+        "uv",
+        "sync",
+        "--all-extras",
+        "--frozen",
+        "--python",
+        "3.14.8"
+      ],
+      "label": "final-sync-2",
+      "exit_code": 0,
+      "seconds": 0.56,
+      "log": "OctoBot-Evaluators-final-sync-2.log"
+    },
+    "build": {
+      "command": [
+        "uv",
+        "build",
+        "--python",
+        "3.14.8"
+      ],
+      "label": "final-build-2",
+      "exit_code": 0,
+      "seconds": 0.89,
+      "log": "OctoBot-Evaluators-final-build-2.log"
+    },
+    "compile": {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "src"
+      ],
+      "label": "final-compile-2",
+      "exit_code": 0,
+      "seconds": 0.07,
+      "log": "OctoBot-Evaluators-final-compile-2.log"
+    }
+  },
+  "default_merged": true,
+  "upstream_default": "upstream/master"
+}

@@ -21,16 +21,16 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
 ]
 dependencies = [
-    "async-channel>=2.2,<2.3",
-    "octobot-commons>=1.10,<1.11",
-    "octobot-tentacles-manager>=2.10,<2.11",
-    "octobot-tulipy>=0.4.3",
+    "async-channel",
+    "octobot-commons",
+    "octobot-tentacles-manager",
+    "octobot-tulipy",
 ]
 
 [project.optional-dependencies]
 full = [
-    "octobot-commons[full]>=1.10,<1.11",
-    "octobot-tentacles-manager[full]>=2.10,<2.11",
+    "octobot-commons[full]",
+    "octobot-tentacles-manager[full]",
 ]
 
 [project.urls]
@@ -38,7 +38,13 @@ Homepage = "https://github.com/Drakkar-Software/OctoBot-Evaluators"
 
 [dependency-groups]
 dev = [
-    "pytest>=9.0",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "pytest-timeout",
+    "pytest-xdist",
+    "mock",
+    "ruff",
 ]
 
 [tool.uv]
@@ -77,3 +83,7 @@ testpaths = ["tests"]
 pythonpath = ["src"]
 xfail_strict = true
 filterwarnings = ["error"]
+
+[tool.uv.sources]
+"octobot-commons" = { path = "../OctoBot-Commons", editable = true }
+"octobot-tentacles-manager" = { path = "vendor/tentacles-manager", editable = true }

@@ -36,3 +36,5 @@ $ python3 -m pip install OctoBot-Tentacles-Manager
 ```
 
 # [Customize your Octobot](https://www.octobot.cloud/en/guides/octobot-tentacles-development/customize-your-octobot)
+
+Development documentation: [architecture and workflows](docs/ayu-develop.md) ([HTML](docs/ayu-develop.html)), [uv development](docs/development.md), and [validation evidence](docs/validation.md).
