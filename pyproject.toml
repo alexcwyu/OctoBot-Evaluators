@@ -87,3 +87,4 @@ filterwarnings = ["error"]
 [tool.uv.sources]
 "octobot-commons" = { path = "../OctoBot-Commons", editable = true }
 "octobot-tentacles-manager" = { path = "vendor/tentacles-manager", editable = true }
+"octobot-tulipy" = { path = "../OctoBot/vendor/octobot-tulipy" }

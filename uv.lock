@@ -5,7 +5,7 @@ requires-python = ">=3.13"
 [manifest]
 overrides = [
     { name = "numpy", specifier = ">=2.0" },
-    { name = "octobot-tulipy", specifier = ">=0.4.11b13" },
+    { name = "octobot-tulipy", directory = "../OctoBot/vendor/octobot-tulipy" },
 ]
 
 [[package]]
@@ -1156,7 +1156,7 @@ requires-dist = [
     { name = "octobot-commons", extras = ["full"], marker = "extra == 'full'", editable = "../OctoBot-Commons" },
     { name = "octobot-tentacles-manager", editable = "vendor/tentacles-manager" },
     { name = "octobot-tentacles-manager", extras = ["full"], marker = "extra == 'full'", editable = "vendor/tentacles-manager" },
-    { name = "octobot-tulipy" },
+    { name = "octobot-tulipy", directory = "../OctoBot/vendor/octobot-tulipy" },
 ]
 provides-extras = ["full"]
 
@@ -1208,26 +1208,13 @@ provides-extras = ["full"]
 [[package]]
 name = "octobot-tulipy"
 version = "0.4.11b13"
-source = { registry = "https://pypi.org/simple" }
+source = { directory = "../OctoBot/vendor/octobot-tulipy" }
 dependencies = [
     { name = "numpy" },
 ]
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/50/86/6a672542832600b241a551922063142b7be206871274471a4985b412b674/octobot_tulipy-0.4.11b13-cp313-cp313-macosx_10_13_universal2.whl", hash = "sha256:c28fa2ff148dbb652713f85532aa390c5b103721d070145df4af7396a9f8bb46", size = 156057, upload-time = "2026-02-03T08:06:37.126Z" },
-    { url = "https://files.pythonhosted.org/packages/1c/2e/8cbdadb082b2e5bdea05514d381faa656bf6788107f9c520f73291c9cce8/octobot_tulipy-0.4.11b13-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:a01970f19e19305a5031bab0ecfb83a519e6ff2ceff20b5fddc509c181abf0d6", size = 87302, upload-time = "2026-02-03T08:06:38.338Z" },
-    { url = "https://files.pythonhosted.org/packages/23/4b/0b2d800187c1f65c713485d544430495aa8f84c940bba5260476e6765ab9/octobot_tulipy-0.4.11b13-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:c86d31a2a3e5df14306c7c15ef6b6c0d3e5c17988ceb31ea37ca568a9f0bb9c4", size = 81416, upload-time = "2026-02-03T08:06:39.501Z" },
-    { url = "https://files.pythonhosted.org/packages/2e/55/b8e9f126659b15ded326b52acb366aacca84284c874fad357939a6160d9f/octobot_tulipy-0.4.11b13-cp313-cp313-manylinux1_i686.manylinux_2_28_i686.manylinux_2_5_i686.whl", hash = "sha256:10615ec1d79fa516436a3b59be015d01672919dae3021c394ec9d48d97960417", size = 342355, upload-time = "2026-02-03T08:37:37.612Z" },
-    { url = "https://files.pythonhosted.org/packages/d4/14/0bb890b383cc6864031e60a02416ad5fd4f3a78f3ed4a20b85057ec0628a/octobot_tulipy-0.4.11b13-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl", hash = "sha256:064d356de69d7c8696ad3723c343aa253b9a97ac99786396a534fff91d23718e", size = 350296, upload-time = "2026-02-03T08:37:38.671Z" },
-    { url = "https://files.pythonhosted.org/packages/b7/01/56ec1008b9b8ef080c1ae23acf96ead428e99c3cb45e9d41ec7ce0e2f40d/octobot_tulipy-0.4.11b13-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:c44c97d3e1e5690c45cb59507859e6e7db494d031dc4b06f14bbb2393c712805", size = 345349, upload-time = "2026-02-03T08:37:39.768Z" },
-    { url = "https://files.pythonhosted.org/packages/f5/08/2cc6cd1f7d9f8957ed885a1fb3ccd549ecbdbaf62f69974618ee8515fa06/octobot_tulipy-0.4.11b13-cp313-cp313-win_amd64.whl", hash = "sha256:2373eff4ccfbb8253d98b96f998f426f8c1c3b192a1603f4dcc46003a5899251", size = 101163, upload-time = "2026-02-03T08:07:52.888Z" },
-    { url = "https://files.pythonhosted.org/packages/cb/ab/bea264e3afbb1c56a9865e8a82f7f3aa2c5479a32449821947682394511d/octobot_tulipy-0.4.11b13-cp314-cp314-macosx_10_15_universal2.whl", hash = "sha256:b5e49165d33e3b225eb27c806f7893d87d0f1258b71af342a4252924079004ce", size = 156445, upload-time = "2026-02-03T08:06:40.305Z" },
-    { url = "https://files.pythonhosted.org/packages/4c/a7/2741eebd18253956f2a408642e0f9f1d17c5868ea8ace1446d34900fa86f/octobot_tulipy-0.4.11b13-cp314-cp314-macosx_10_15_x86_64.whl", hash = "sha256:3ae578748317adfad8c3a589ed79171f23ab9c2eaf4ad79c5155acc1e6a2bce0", size = 87636, upload-time = "2026-02-03T08:06:41.614Z" },
-    { url = "https://files.pythonhosted.org/packages/6c/e0/6c3ab1c900db3c54f3f9c6a8d6cb013ba5d3b6019c065b3985f01819b7c1/octobot_tulipy-0.4.11b13-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:bf5d5c2b5c77e1288821e81ce655805e94a41ddc2b34ae50c6fc0380f4163432", size = 81597, upload-time = "2026-02-03T08:06:42.496Z" },
-    { url = "https://files.pythonhosted.org/packages/f0/13/1ba0aa1ad45699e15048c90a4a9f8e83bcd297a09e2821ce62694394a192/octobot_tulipy-0.4.11b13-cp314-cp314-manylinux1_i686.manylinux_2_28_i686.manylinux_2_5_i686.whl", hash = "sha256:a9a457e3a40b6845e37e41b70719c8522494312ac73cf82339520d31f9e984a4", size = 341888, upload-time = "2026-02-03T08:37:40.847Z" },
-    { url = "https://files.pythonhosted.org/packages/01/6a/2a9cafe9cae1ef11abe6617770ad1a535e915e4430c14b0832dfa1fd9865/octobot_tulipy-0.4.11b13-cp314-cp314-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl", hash = "sha256:0b07380679a1c10b623fcc5bde4d0471411558339e45405730d2063812a344f1", size = 347353, upload-time = "2026-02-03T08:37:41.891Z" },
-    { url = "https://files.pythonhosted.org/packages/d5/74/dcc1340c924efba90c0117c0134bc047c72cb190d5fe96c39dcff82fd0f6/octobot_tulipy-0.4.11b13-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:100b7be45680ec39e5f62f03ea70907e20485d8161a15dd9015a93fcc98d0d6a", size = 344350, upload-time = "2026-02-03T08:37:42.969Z" },
-    { url = "https://files.pythonhosted.org/packages/55/28/533f6a32b8eaf07517e5585072bce6d5c5cb5251ec8e0b6d5d6936443086/octobot_tulipy-0.4.11b13-cp314-cp314-win_amd64.whl", hash = "sha256:3554d801722dbf3301f89e8549efcee7ebdeb4f48d5301b066d7dcfc8ee5040b", size = 103501, upload-time = "2026-02-03T08:07:54.107Z" },
-]
+
+[package.metadata]
+requires-dist = [{ name = "numpy", specifier = "==2.4.2" }]
 
 [[package]]
 name = "packaging"

@@ -74,7 +74,7 @@ Extend the owning component behind its existing public interface. Keep metadata 
 
 ## Packaging and dependency design
 
-The standalone framework uses Commons from the sibling checkout and the published Tentacles Manager API. Tulipy requires its explicit latest prerelease for current NumPy/Python wheels. Python 3.14.8 is selected. Published Tentacles Manager 2.10 has an unclosed scandir iterator affecting strict fixture setup; the corresponding monorepo implementation is repaired but is not API-compatible with this older standalone stack.
+The standalone framework uses sibling Commons and the licensed Tentacles Manager 2.10 compatibility source described in [its provenance](../vendor/tentacles-manager/PROVENANCE.md). The adjacent [latest Tulipy source](../../OctoBot/vendor/octobot-tulipy/PROVENANCE.md) supports a complete Python 3.15 native build while preserving original indicator arithmetic. All 57 original standalone cases pass; original assertions remain intact.
 
 The lock records exact package versions, hashes, platform markers, and local source mappings. Path sources deliberately bind related repositories in this workspace; clone sibling repositories at the documented names before synchronization. Published packaging metadata describes public dependencies, while uv source settings select this development workspace. Resolve dependency changes with uv lock --upgrade and retain the generated lock, then verify the same locked environment.
 
