@@ -1,4 +1,11 @@
-# OctoBot-Evaluators maintenance validation
+# OctoBot-Evaluators: final Python 3.15 verification
+
+Selected runtime: **managed Python 3.15.0**, uv **0.13.0**; source commit `da572a53894520bd41a49418c25e228057be8252`. Its own existing repository suite passed: **57 passed in 1.99s**. This is the original standalone repository suite, separately executed from the newer host's package suites. Source distribution and wheel builds, frozen synchronization and strict source compilation passed. No test cases, golden values or formulas changed.
+
+[Development and native prerequisites](development.md) · [Portable exact commands](maintenance/index.md) · [Machine-readable evidence](maintenance/verification.json). The locked adjacent licensed source and supported system-library configuration are explicit in the project metadata and development guide.
+
+## Historical verification attempts
+
 
 Recorded 2026-10-12T01:32:44.003848+08:00. Branch `feature/ayu_develop`; upstream default `upstream/master` is merged: **true**. Branch/tag synchronization records are retained in the workspace maintenance evidence. Feature branch publication is coordinated separately.
 

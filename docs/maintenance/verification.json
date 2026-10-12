@@ -1,542 +1,560 @@
-{
-  "repository": "OctoBot-Evaluators",
-  "source_commit_before_documentation_commit": "fb89734ad0ceab9b0680e88384a07d1089b3787f",
-  "recorded_on": "2026-10-12",
-  "records": [
-    {
-      "command": [
-        "uv",
-        "build",
-        "--python",
-        "3.14"
-      ],
-      "exit_code": 0,
-      "seconds": 1.04,
-      "check": "build",
-      "original_log": "OctoBot-Evaluators-build.log",
-      "log_sha256": "8523cf6b9325aca1b5b5ec773dee2e2e6bbec620966574316af4054ea7ffd318",
-      "outcomes": [
-        "Successfully built dist/octobot_evaluators-1.10.1.tar.gz",
-        "Successfully built dist/octobot_evaluators-1.10.1-py3-none-any.whl"
-      ]
-    },
-    {
-      "command": [
-        "<workspace>/OctoBot-Evaluators/.venv/bin/python",
-        "-m",
-        "compileall",
-        "-q",
-        "src"
-      ],
-      "exit_code": 0,
-      "seconds": 0.13,
-      "check": "compile",
-      "original_log": "OctoBot-Evaluators-compile.log",
-      "log_sha256": "f7920df09481849f8e1c0855e789cb23f6cf4f4d1b1c7fcac6356e60fdcd8b65",
-      "outcomes": []
-    },
-    {
-      "command": [
-        "uv",
-        "sync",
-        "--all-extras",
-        "--python",
-        "3.14.8"
-      ],
-      "exit_code": 0,
-      "seconds": 0.77,
-      "check": "directory-resource-sync",
-      "original_log": "OctoBot-Evaluators-directory-resource-sync.log",
-      "log_sha256": "e5998733b10204f2af1bc7f691b1b021f593f126ec1504220d368f120762fd38",
-      "outcomes": []
-    },
-    {
-      "command": [
-        "uv",
-        "build",
-        "--python",
-        "3.14.8"
-      ],
-      "exit_code": 0,
-      "seconds": 1.25,
-      "check": "final-build",
-      "original_log": "OctoBot-Evaluators-final-build.log",
-      "log_sha256": "0d580805068098ce0934fa9d0f44d3af0d5e0245bd4a91b70650a4b3c0c2e4d7",
-      "outcomes": [
-        "Successfully built dist/octobot_evaluators-1.10.1.tar.gz",
-        "Successfully built dist/octobot_evaluators-1.10.1-py3-none-any.whl"
-      ]
-    },
-    {
-      "command": [
-        "uv",
-        "build",
-        "--python",
-        "3.14.8"
-      ],
-      "exit_code": 0,
-      "seconds": 0.89,
-      "check": "final-build-2",
-      "original_log": "OctoBot-Evaluators-final-build-2.log",
-      "log_sha256": "0d580805068098ce0934fa9d0f44d3af0d5e0245bd4a91b70650a4b3c0c2e4d7",
-      "outcomes": [
-        "Successfully built dist/octobot_evaluators-1.10.1.tar.gz",
-        "Successfully built dist/octobot_evaluators-1.10.1-py3-none-any.whl"
-      ]
-    },
-    {
-      "command": [
-        ".venv/bin/python",
-        "-m",
-        "compileall",
-        "-q",
-        "src"
-      ],
-      "exit_code": 0,
-      "seconds": 0.07,
-      "check": "final-compile",
-      "original_log": "OctoBot-Evaluators-final-compile.log",
-      "log_sha256": "4dabb76013caec51c3f56da271eb0a58b695f2bfcf5327d2708624abfe11fb50",
-      "outcomes": []
-    },
-    {
-      "command": [
-        ".venv/bin/python",
-        "-m",
-        "compileall",
-        "-q",
-        "src"
-      ],
-      "exit_code": 0,
-      "seconds": 0.07,
-      "check": "final-compile-2",
-      "original_log": "OctoBot-Evaluators-final-compile-2.log",
-      "log_sha256": "4dabb76013caec51c3f56da271eb0a58b695f2bfcf5327d2708624abfe11fb50",
-      "outcomes": []
-    },
-    {
-      "command": [
-        ".venv/bin/python",
-        "-m",
-        "pytest",
-        "tests"
-      ],
-      "exit_code": 2,
-      "seconds": 1.13,
-      "check": "final-existing-tests",
-      "original_log": "OctoBot-Evaluators-final-existing-tests.log",
-      "log_sha256": "b4d87862838fd1549548c93295e1b4a9c95e69d2ec1958c632e1fbcc8dce00e0",
-      "outcomes": []
-    },
-    {
-      "command": [
-        ".venv/bin/python",
-        "-m",
-        "pytest",
-        "tests"
-      ],
-      "exit_code": 0,
-      "seconds": 1.39,
-      "check": "final-existing-tests-2",
-      "original_log": "OctoBot-Evaluators-final-existing-tests-2.log",
-      "log_sha256": "1d60650ae67bd2657261f280f1c8f9ebb3e3df7994b61400053646dbd1d33834",
-      "outcomes": [
-        "57 passed in 0.98s"
-      ]
-    },
-    {
-      "command": [
-        "uv",
-        "lock",
-        "--upgrade"
-      ],
-      "exit_code": 0,
-      "seconds": 0.25,
-      "check": "final-lock",
-      "original_log": "OctoBot-Evaluators-final-lock.log",
-      "log_sha256": "16ba6b10b7894d5e8f06630923b92b517d973eaeda14bdeb31005b7909894afd",
-      "outcomes": []
-    },
-    {
-      "command": [
-        "uv",
-        "lock",
-        "--upgrade"
-      ],
-      "exit_code": 0,
-      "seconds": 0.41,
-      "check": "final-lock-2",
-      "original_log": "OctoBot-Evaluators-final-lock-2.log",
-      "log_sha256": "1ce466103381761c48b0cea8208a183ffa42c1ec19cff44ccea1f1c0887d5a49",
-      "outcomes": []
-    },
-    {
-      "command": [
-        "uv",
-        "sync",
-        "--all-extras",
-        "--frozen",
-        "--python",
-        "3.14.8"
-      ],
-      "exit_code": 0,
-      "seconds": 0.08,
-      "check": "final-sync",
-      "original_log": "OctoBot-Evaluators-final-sync.log",
-      "log_sha256": "9eb09a6527d3d5c119fa05892db9115a8ede3345c790e3907bb7e6a0cd6d36e3",
-      "outcomes": []
-    },
-    {
-      "command": [
-        "uv",
-        "sync",
-        "--all-extras",
-        "--frozen",
-        "--python",
-        "3.14.8"
-      ],
-      "exit_code": 0,
-      "seconds": 0.56,
-      "check": "final-sync-2",
-      "original_log": "OctoBot-Evaluators-final-sync-2.log",
-      "log_sha256": "29a6ca1529437cb7f153cecdf0e7d3bef6f35715c1b547f4e9785950d39dbb3a",
-      "outcomes": []
-    },
-    {
-      "command": [
-        "uv",
-        "sync",
-        "--all-extras",
-        "--python",
-        "3.14"
-      ],
-      "exit_code": 0,
-      "seconds": 1.85,
-      "check": "local-manager-sync",
-      "original_log": "OctoBot-Evaluators-local-manager-sync.log",
-      "log_sha256": "fc40a4d9e79838cbb468e16f6c8e9c65659dfd28e4ded5b4e86568b908f67194",
-      "outcomes": []
-    },
-    {
-      "command": [
-        "uv",
-        "lock",
-        "--upgrade",
-        "--python",
-        "3.14"
-      ],
-      "exit_code": 0,
-      "seconds": 0.88,
-      "check": "lock-3.14",
-      "original_log": "OctoBot-Evaluators-lock-3.14.log",
-      "log_sha256": "5ca711c406bacc71f710278d0b9963ebd2fc575563c8a869fa39a9517d1a8689",
-      "outcomes": []
-    },
-    {
-      "command": [
-        "uv",
-        "lock",
-        "--upgrade",
-        "--python",
-        "3.15"
-      ],
-      "exit_code": 0,
-      "seconds": 1.37,
-      "check": "lock-3.15",
-      "original_log": "OctoBot-Evaluators-lock-3.15.log",
-      "log_sha256": "0641eabdca2e5ec483171f0d0076d44ba832b2fadcfd8176ab9f3097bcc3fd26",
-      "outcomes": []
-    },
-    {
-      "command": [
-        "uv",
-        "sync",
-        "--all-extras",
-        "--python",
-        "3.14"
-      ],
-      "exit_code": 0,
-      "seconds": 1.12,
-      "check": "public-manager-sync",
-      "original_log": "OctoBot-Evaluators-public-manager-sync.log",
-      "log_sha256": "fd9aa26d61bfa9be3c6ec11c2ee4d3cf931f81addce656e1ecc7b0dc49ca68df",
-      "outcomes": []
-    },
-    {
-      "command": [
-        "uv",
-        "sync",
-        "--all-extras",
-        "--python",
-        "3.14"
-      ],
-      "exit_code": 0,
-      "seconds": 1.37,
-      "check": "sync-3.14",
-      "original_log": "OctoBot-Evaluators-sync-3.14.log",
-      "log_sha256": "2a19ca32674edc14d438919190ae72a3afa94b38c4ba081f8249167d50327340",
-      "outcomes": []
-    },
-    {
-      "command": [
-        "uv",
-        "sync",
-        "--all-extras",
-        "--python",
-        "3.15"
-      ],
-      "exit_code": 2,
-      "seconds": 0.04,
-      "check": "sync-3.15",
-      "original_log": "OctoBot-Evaluators-sync-3.15.log",
-      "log_sha256": "242e73cb1da25edb7872601e4f240f66da67941bd22e35f1f7b6fc9c237ba3b8",
-      "outcomes": []
-    },
-    {
-      "command": [
-        "<workspace>/OctoBot-Evaluators/.venv/bin/python",
-        "-m",
-        "pytest",
-        "tests"
-      ],
-      "exit_code": 2,
-      "seconds": 2.39,
-      "check": "tests",
-      "original_log": "OctoBot-Evaluators-tests.log",
-      "log_sha256": "6c0e48d1338d8b42810cc98fd66ea9d555319a0f93fca0021988a40e06d10acf",
-      "outcomes": []
-    },
-    {
-      "command": [
-        ".venv/bin/python",
-        "-m",
-        "pytest",
-        "tests"
-      ],
-      "exit_code": 1,
-      "seconds": 8.46,
-      "check": "tests-2",
-      "original_log": "OctoBot-Evaluators-tests-2.log",
-      "log_sha256": "7f9b299819fae0c0c684ff3d88005ea3dab432ec835ff1c992283eb2222077eb",
-      "outcomes": [
-        "52 passed, 5 errors in 6.78s"
-      ]
-    },
-    {
-      "command": [
-        ".venv/bin/python",
-        "-m",
-        "pytest",
-        "tests"
-      ],
-      "exit_code": 2,
-      "seconds": 2.19,
-      "check": "tests-3",
-      "original_log": "OctoBot-Evaluators-tests-3.log",
-      "log_sha256": "7c5caa7233ebf8f1a974c001bc7f5d21e6c3e45aba148462b61bb927d552a8fa",
-      "outcomes": []
-    },
-    {
-      "command": [
-        ".venv/bin/python",
-        "-m",
-        "pytest",
-        "tests"
-      ],
-      "exit_code": 2,
-      "seconds": 2.16,
-      "check": "tests-4",
-      "original_log": "OctoBot-Evaluators-tests-4.log",
-      "log_sha256": "e349d36a11914cceb4b5594185bce320959b29871cca9db82a91f08e7f38fc33",
-      "outcomes": []
-    },
-    {
-      "command": [
-        ".venv/bin/python",
-        "-m",
-        "pytest",
-        "tests"
-      ],
-      "exit_code": 2,
-      "seconds": 2.15,
-      "check": "tests-5",
-      "original_log": "OctoBot-Evaluators-tests-5.log",
-      "log_sha256": "f32f61612658bbcac06fbacbc41f9c19ad3b10d8e9aec73aa07fd8c418a89621",
-      "outcomes": []
-    },
-    {
-      "command": [
-        ".venv/bin/python",
-        "-m",
-        "pytest",
-        "tests"
-      ],
-      "exit_code": 1,
-      "seconds": 3.34,
-      "check": "tests-6",
-      "original_log": "OctoBot-Evaluators-tests-6.log",
-      "log_sha256": "299c1dafa67bd34d193ac81943834239a755eccbb5bd49dd9967677f3d0f1332",
-      "outcomes": [
-        "52 passed, 5 errors in 2.50s"
-      ]
-    },
-    {
-      "command": [
-        "uv",
-        "sync",
-        "--all-extras",
-        "--python",
-        "3.14"
-      ],
-      "exit_code": 0,
-      "seconds": 0.61,
-      "check": "updated-manager-sync",
-      "original_log": "OctoBot-Evaluators-updated-manager-sync.log",
-      "log_sha256": "56ee66cb029ca3d6593e674785f522697dc0d357a17b03362a6b72c9f1635b37",
-      "outcomes": []
-    }
-  ],
-  "summary": {
-    "repo": "OctoBot-Evaluators",
-    "started": "2026-10-12T00:13:20+0800",
-    "python": "3.14.8",
-    "head": "642e39f3092a56fe0de5f1d871a689099bffd98c",
-    "branch": "feature/ayu_develop",
-    "runtime_inventory": {
-      "executable": "<workspace>/OctoBot-Evaluators/.venv/bin/python",
-      "packages": {
-        "Cython": "3.3.0",
-        "Jinja2": "3.1.6",
-        "MarkupSafe": "3.0.4",
-        "OctoBot-Tulipy": "0.4.11b13",
-        "PyYAML": "6.0.3",
-        "Pygments": "2.21.0",
-        "aioboto3": "15.5.0",
-        "aiobotocore": "2.25.1",
-        "aiofiles": "25.1.0",
-        "aiohappyeyeballs": "2.7.1",
-        "aiohttp": "3.14.5",
-        "aioitertools": "0.13.0",
-        "aiosignal": "1.4.0",
-        "aiosqlite": "0.22.1",
-        "async_channel": "2.2.2",
-        "attrs": "26.1.0",
-        "boto3": "1.40.61",
-        "botocore": "1.40.61",
-        "certifi": "2026.7.22",
-        "cffi": "2.1.1",
-        "charset-normalizer": "3.5.2",
-        "coverage": "7.16.2",
-        "cryptography": "50.0.2",
-        "execnet": "2.1.2",
-        "frozenlist": "1.8.0",
-        "idna": "3.20",
-        "iniconfig": "2.3.1",
-        "jmespath": "1.1.0",
-        "jsonschema": "4.26.0",
-        "jsonschema-specifications": "2025.9.1",
-        "mock": "5.2.0",
-        "multidict": "6.9.1",
-        "numpy": "2.5.4",
-        "octobot-commons": "1.10.6",
-        "octobot-evaluators": "1.10.1",
-        "octobot-tentacles-manager": "2.10.0+ayu.1",
-        "packaging": "26.3",
-        "pluggy": "1.6.0",
-        "propcache": "0.5.4",
-        "psutil": "7.2.2",
-        "pycparser": "3.11",
-        "pytest": "9.1.1",
-        "pytest-asyncio": "1.4.0",
-        "pytest-cov": "7.1.0",
-        "pytest-timeout": "2.4.0",
-        "pytest-xdist": "3.8.0",
-        "python-dateutil": "2.9.0.post0",
-        "referencing": "0.37.0",
-        "requests": "2.34.2",
-        "rpds-py": "2026.9.1",
-        "ruff": "0.17.0",
-        "s3transfer": "0.14.0",
-        "six": "1.17.0",
-        "sortedcontainers": "2.4.0",
-        "urllib3": "2.8.0",
-        "wrapt": "1.17.3",
-        "yarl": "1.25.1"
-      },
-      "python": "3.14.8 (main, Oct  9 2026, 15:11:09) [Clang 22.1.3 ]"
-    },
-    "validation_updated": "2026-10-12T01:32:44.003848+08:00",
-    "python_decision": "Tulipy 0.4.11b13 has no Python 3.15 distribution; Python 3.14.8 is selected.",
-    "outcome_notes": "Existing evaluator suite passes with the LGPL manager 2.10.0 compatibility source: directory iterators close on early matches, and packaging.version replaces removed distutils. See vendor/tentacles-manager/PROVENANCE.md.",
-    "selected_test": {
-      "command": [
-        ".venv/bin/python",
-        "-m",
-        "pytest",
-        "tests"
-      ],
-      "label": "final-existing-tests-2",
-      "exit_code": 0,
-      "seconds": 1.39,
-      "log": "<workspace>/docs/maintenance-2026-10-12/OctoBot-Evaluators-final-existing-tests-2.log"
-    },
-    "test_summary": "57 passed in 0.98s",
-    "status": "passed",
-    "final_checks": {
-      "lock": {
-        "command": [
-          "uv",
-          "lock",
-          "--upgrade"
-        ],
-        "label": "final-lock-2",
-        "exit_code": 0,
-        "seconds": 0.41,
-        "log": "<workspace>/docs/maintenance-2026-10-12/OctoBot-Evaluators-final-lock-2.log"
-      },
-      "sync": {
-        "command": [
-          "uv",
-          "sync",
-          "--all-extras",
-          "--frozen",
-          "--python",
-          "3.14.8"
-        ],
-        "label": "final-sync-2",
-        "exit_code": 0,
-        "seconds": 0.56,
-        "log": "<workspace>/docs/maintenance-2026-10-12/OctoBot-Evaluators-final-sync-2.log"
-      },
-      "build": {
-        "command": [
-          "uv",
-          "build",
-          "--python",
-          "3.14.8"
-        ],
-        "label": "final-build-2",
-        "exit_code": 0,
-        "seconds": 0.89,
-        "log": "<workspace>/docs/maintenance-2026-10-12/OctoBot-Evaluators-final-build-2.log"
-      },
-      "compile": {
-        "command": [
-          ".venv/bin/python",
-          "-m",
-          "compileall",
-          "-q",
-          "src"
-        ],
-        "label": "final-compile-2",
-        "exit_code": 0,
-        "seconds": 0.07,
-        "log": "<workspace>/docs/maintenance-2026-10-12/OctoBot-Evaluators-final-compile-2.log"
-      }
-    },
-    "default_merged": true,
-    "upstream_default": "upstream/master",
-    "maintenance_commit": "fb89734ad0ceab9b0680e88384a07d1089b3787f"
+[
+  {
+    "command": [
+      "uv",
+      "build",
+      "--python",
+      "3.14"
+    ],
+    "exit_code": 0,
+    "seconds": 1.04,
+    "label": "build",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-build.log",
+    "log_sha256": "8523cf6b9325aca1b5b5ec773dee2e2e6bbec620966574316af4054ea7ffd318",
+    "log_bytes": 224,
+    "outcome_lines": []
   },
-  "note": "Full raw logs are retained in the workspace maintenance evidence, not distributed here. Hashes identify those original logs. A successful build or selected test subset does not imply a full test-suite pass. Commands containing <workspace> describe the original execution environment."
-}
+  {
+    "command": [
+      "<workspace>/OctoBot-Evaluators/.venv/bin/python",
+      "-m",
+      "compileall",
+      "-q",
+      "src"
+    ],
+    "exit_code": 0,
+    "seconds": 0.13,
+    "label": "compile",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-compile.log",
+    "log_sha256": "f7920df09481849f8e1c0855e789cb23f6cf4f4d1b1c7fcac6356e60fdcd8b65",
+    "log_bytes": 90,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "uv",
+      "sync",
+      "--all-extras",
+      "--python",
+      "3.14.8"
+    ],
+    "exit_code": 0,
+    "seconds": 0.77,
+    "label": "directory-resource-sync",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-directory-resource-sync.log",
+    "log_sha256": "e5998733b10204f2af1bc7f691b1b021f593f126ec1504220d368f120762fd38",
+    "log_bytes": 865,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "uv",
+      "build",
+      "--python",
+      "3.14.8"
+    ],
+    "exit_code": 0,
+    "seconds": 0.89,
+    "label": "final-build-2",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-final-build-2.log",
+    "log_sha256": "0d580805068098ce0934fa9d0f44d3af0d5e0245bd4a91b70650a4b3c0c2e4d7",
+    "log_bytes": 226,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "uv",
+      "build",
+      "--python",
+      "3.14.8"
+    ],
+    "exit_code": 0,
+    "seconds": 1.25,
+    "label": "final-build",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-final-build.log",
+    "log_sha256": "0d580805068098ce0934fa9d0f44d3af0d5e0245bd4a91b70650a4b3c0c2e4d7",
+    "log_bytes": 226,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "compileall",
+      "-q",
+      "src"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07,
+    "label": "final-compile-2",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-final-compile-2.log",
+    "log_sha256": "4dabb76013caec51c3f56da271eb0a58b695f2bfcf5327d2708624abfe11fb50",
+    "log_bytes": 40,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "compileall",
+      "-q",
+      "src"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07,
+    "label": "final-compile",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-final-compile.log",
+    "log_sha256": "4dabb76013caec51c3f56da271eb0a58b695f2bfcf5327d2708624abfe11fb50",
+    "log_bytes": 40,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "pytest",
+      "tests"
+    ],
+    "exit_code": 0,
+    "seconds": 1.39,
+    "label": "final-existing-tests-2",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-final-existing-tests-2.log",
+    "log_sha256": "1d60650ae67bd2657261f280f1c8f9ebb3e3df7994b61400053646dbd1d33834",
+    "log_bytes": 134,
+    "outcome_lines": [
+      "57 passed in 0.98s"
+    ]
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "pytest",
+      "tests"
+    ],
+    "exit_code": 2,
+    "seconds": 1.13,
+    "label": "final-existing-tests",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-final-existing-tests.log",
+    "log_sha256": "b4d87862838fd1549548c93295e1b4a9c95e69d2ec1958c632e1fbcc8dce00e0",
+    "log_bytes": 10431,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "uv",
+      "lock",
+      "--upgrade"
+    ],
+    "exit_code": 0,
+    "seconds": 0.41,
+    "label": "final-lock-2",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-final-lock-2.log",
+    "log_sha256": "1ce466103381761c48b0cea8208a183ffa42c1ec19cff44ccea1f1c0887d5a49",
+    "log_bytes": 369,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "uv",
+      "lock",
+      "--upgrade"
+    ],
+    "exit_code": 0,
+    "seconds": 0.25,
+    "label": "final-lock",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-final-lock.log",
+    "log_sha256": "16ba6b10b7894d5e8f06630923b92b517d973eaeda14bdeb31005b7909894afd",
+    "log_bytes": 50,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "uv",
+      "sync",
+      "--all-extras",
+      "--frozen",
+      "--python",
+      "3.14.8"
+    ],
+    "exit_code": 0,
+    "seconds": 0.56,
+    "label": "final-sync-2",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-final-sync-2.log",
+    "log_sha256": "29a6ca1529437cb7f153cecdf0e7d3bef6f35715c1b547f4e9785950d39dbb3a",
+    "log_bytes": 464,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "uv",
+      "sync",
+      "--all-extras",
+      "--frozen",
+      "--python",
+      "3.14.8"
+    ],
+    "exit_code": 0,
+    "seconds": 0.08,
+    "label": "final-sync",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-final-sync.log",
+    "log_sha256": "9eb09a6527d3d5c119fa05892db9115a8ede3345c790e3907bb7e6a0cd6d36e3",
+    "log_bytes": 76,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "uv",
+      "sync",
+      "--all-extras",
+      "--python",
+      "3.14"
+    ],
+    "exit_code": 0,
+    "seconds": 1.85,
+    "label": "local-manager-sync",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-local-manager-sync.log",
+    "log_sha256": "fc40a4d9e79838cbb468e16f6c8e9c65659dfd28e4ded5b4e86568b908f67194",
+    "log_bytes": 1091,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "uv",
+      "lock",
+      "--upgrade",
+      "--python",
+      "3.14"
+    ],
+    "exit_code": 0,
+    "seconds": 0.88,
+    "label": "lock-3.14",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-lock-3.14.log",
+    "log_sha256": "5ca711c406bacc71f710278d0b9963ebd2fc575563c8a869fa39a9517d1a8689",
+    "log_bytes": 150,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "uv",
+      "lock",
+      "--upgrade",
+      "--python",
+      "3.15"
+    ],
+    "exit_code": 0,
+    "seconds": 1.37,
+    "label": "lock-3.15",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-lock-3.15.log",
+    "log_sha256": "0641eabdca2e5ec483171f0d0076d44ba832b2fadcfd8176ab9f3097bcc3fd26",
+    "log_bytes": 1082,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "uv",
+      "sync",
+      "--all-extras",
+      "--python",
+      "3.14"
+    ],
+    "exit_code": 0,
+    "seconds": 1.12,
+    "label": "public-manager-sync",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-public-manager-sync.log",
+    "log_sha256": "fd9aa26d61bfa9be3c6ec11c2ee4d3cf931f81addce656e1ecc7b0dc49ca68df",
+    "log_bytes": 1761,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-Werror",
+      "-m",
+      "compileall",
+      "-q",
+      "src"
+    ],
+    "cwd": ".",
+    "exit_code": 0,
+    "seconds": 0.05,
+    "label": "compile",
+    "evidence_record": "OctoBot-Evaluators-selected-python315-checks.json",
+    "original_log": "OctoBot-Evaluators-selected-python315-compile.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "log_bytes": 0,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "uv",
+      "sync",
+      "--all-extras",
+      "--frozen",
+      "--python",
+      "3.15.0"
+    ],
+    "cwd": ".",
+    "exit_code": 0,
+    "seconds": 1.36,
+    "label": "sync",
+    "evidence_record": "OctoBot-Evaluators-selected-python315-checks.json",
+    "original_log": "OctoBot-Evaluators-selected-python315-sync.log",
+    "log_sha256": "56bf8056a190edff85f9d56e066c18a93175f32fed4b3f9cfe238bc7a1e950f0",
+    "log_bytes": 1637,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "uv",
+      "build",
+      "--python",
+      "3.15.0"
+    ],
+    "exit_code": 0,
+    "seconds": 0.94,
+    "label": "build",
+    "evidence_record": "OctoBot-Evaluators-source-final-python315-control.json",
+    "original_log": "OctoBot-Evaluators-source-final-python315-build.log",
+    "log_sha256": "d693ec69ebe3a6691fb3cf9d635788483d4ad8ca6b03fcd426619681a76a01c3",
+    "log_bytes": 199,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "/tmp/octobot-evaluators-final315-control/bin/python",
+      "-Werror",
+      "-m",
+      "compileall",
+      "-q",
+      "src"
+    ],
+    "exit_code": 0,
+    "seconds": 0.13,
+    "label": "compile",
+    "evidence_record": "OctoBot-Evaluators-source-final-python315-control.json",
+    "original_log": "OctoBot-Evaluators-source-final-python315-compile.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "log_bytes": 0,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "uv",
+      "lock"
+    ],
+    "exit_code": 0,
+    "seconds": 0.13,
+    "label": "lock",
+    "evidence_record": "OctoBot-Evaluators-source-final-python315-control.json",
+    "original_log": "OctoBot-Evaluators-source-final-python315-lock.log",
+    "log_sha256": "72e4539266161ddb6968aa56604f00e3b3e0f1564c765553b15695e4aaf71d4e",
+    "log_bytes": 51,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "uv",
+      "sync",
+      "--all-extras",
+      "--frozen",
+      "--python",
+      "3.15.0"
+    ],
+    "exit_code": 0,
+    "seconds": 0.78,
+    "label": "sync",
+    "evidence_record": "OctoBot-Evaluators-source-final-python315-control.json",
+    "original_log": "OctoBot-Evaluators-source-final-python315-sync.log",
+    "log_sha256": "bce2bc97e32985b333708b15bd4da276c96301bf250b1ca1e8f29372b9235444",
+    "log_bytes": 1842,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "/tmp/octobot-evaluators-final315-control/bin/python",
+      "-m",
+      "pytest",
+      "tests",
+      "--tb=short"
+    ],
+    "exit_code": 0,
+    "seconds": 3.52,
+    "label": "tests",
+    "evidence_record": "OctoBot-Evaluators-source-final-python315-control.json",
+    "original_log": "OctoBot-Evaluators-source-final-python315-tests.log",
+    "log_sha256": "6b2cd2a849edbbbf3f6504d736d53f2b437dcfe3a3151aaa4488e70e6c28e420",
+    "log_bytes": 99,
+    "outcome_lines": [
+      "57 passed in 1.99s"
+    ]
+  },
+  {
+    "command": [
+      "uv",
+      "sync",
+      "--all-extras",
+      "--python",
+      "3.14"
+    ],
+    "exit_code": 0,
+    "seconds": 1.37,
+    "label": "sync-3.14",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-sync-3.14.log",
+    "log_sha256": "2a19ca32674edc14d438919190ae72a3afa94b38c4ba081f8249167d50327340",
+    "log_bytes": 1825,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "uv",
+      "sync",
+      "--all-extras",
+      "--python",
+      "3.15"
+    ],
+    "exit_code": 2,
+    "seconds": 0.04,
+    "label": "sync-3.15",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-sync-3.15.log",
+    "log_sha256": "242e73cb1da25edb7872601e4f240f66da67941bd22e35f1f7b6fc9c237ba3b8",
+    "log_bytes": 454,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "pytest",
+      "tests"
+    ],
+    "exit_code": 1,
+    "seconds": 8.46,
+    "label": "tests-2",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-tests-2.log",
+    "log_sha256": "7f9b299819fae0c0c684ff3d88005ea3dab432ec835ff1c992283eb2222077eb",
+    "log_bytes": 92032,
+    "outcome_lines": [
+      "52 passed, 5 errors in 6.78s"
+    ]
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "pytest",
+      "tests"
+    ],
+    "exit_code": 2,
+    "seconds": 2.19,
+    "label": "tests-3",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-tests-3.log",
+    "log_sha256": "7c5caa7233ebf8f1a974c001bc7f5d21e6c3e45aba148462b61bb927d552a8fa",
+    "log_bytes": 12261,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "pytest",
+      "tests"
+    ],
+    "exit_code": 2,
+    "seconds": 2.16,
+    "label": "tests-4",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-tests-4.log",
+    "log_sha256": "e349d36a11914cceb4b5594185bce320959b29871cca9db82a91f08e7f38fc33",
+    "log_bytes": 8954,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "pytest",
+      "tests"
+    ],
+    "exit_code": 2,
+    "seconds": 2.15,
+    "label": "tests-5",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-tests-5.log",
+    "log_sha256": "f32f61612658bbcac06fbacbc41f9c19ad3b10d8e9aec73aa07fd8c418a89621",
+    "log_bytes": 11537,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "pytest",
+      "tests"
+    ],
+    "exit_code": 1,
+    "seconds": 3.34,
+    "label": "tests-6",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-tests-6.log",
+    "log_sha256": "299c1dafa67bd34d193ac81943834239a755eccbb5bd49dd9967677f3d0f1332",
+    "log_bytes": 92032,
+    "outcome_lines": [
+      "52 passed, 5 errors in 2.50s"
+    ]
+  },
+  {
+    "command": [
+      "<workspace>/OctoBot-Evaluators/.venv/bin/python",
+      "-m",
+      "pytest",
+      "tests"
+    ],
+    "exit_code": 2,
+    "seconds": 2.39,
+    "label": "tests",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-tests.log",
+    "log_sha256": "6c0e48d1338d8b42810cc98fd66ea9d555319a0f93fca0021988a40e06d10acf",
+    "log_bytes": 14841,
+    "outcome_lines": []
+  },
+  {
+    "command": [
+      "uv",
+      "sync",
+      "--all-extras",
+      "--python",
+      "3.14"
+    ],
+    "exit_code": 0,
+    "seconds": 0.61,
+    "label": "updated-manager-sync",
+    "evidence_record": "OctoBot-Evaluators-result.json",
+    "original_log": "OctoBot-Evaluators-updated-manager-sync.log",
+    "log_sha256": "56ee66cb029ca3d6593e674785f522697dc0d357a17b03362a6b72c9f1635b37",
+    "log_bytes": 666,
+    "outcome_lines": []
+  }
+]
