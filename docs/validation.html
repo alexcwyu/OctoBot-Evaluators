@@ -4,10 +4,10 @@
 <p><a href="development.md">Development and native prerequisites</a> · <a href="maintenance/index.md">Portable exact commands</a> · <a href="maintenance/verification.json">Machine-readable evidence</a>. The locked adjacent licensed source and supported system-library configuration are explicit in the project metadata and development guide.</p>
 <h2 id="historical-verification-attempts">Historical verification attempts</h2>
 <p>Recorded 2026-10-12T01:32:44.003848+08:00. Branch <code>feature/ayu_develop</code>; upstream default <code>upstream/master</code> is merged: <strong>true</strong>. Branch/tag synchronization records are retained in the workspace maintenance evidence. Feature branch publication is coordinated separately.</p>
-<p>Runtime: <strong>CPython 3.14.8</strong>, uv <strong>0.13.0</strong>, build backend <code>hatchling.build</code>. Tulipy 0.4.11b13 has no Python 3.15 distribution; Python 3.14.8 is selected.</p>
+<p>Historical runtime: <strong>CPython 3.14.8</strong>, uv <strong>0.13.0</strong>, build backend <code>hatchling.build</code>. Tulipy 0.4.11b13 has no Python 3.15 distribution; Python 3.14.8 was selected at this stage; the reviewed Python 3.15 migration above supersedes that fallback.</p>
 <p>Existing suite: <strong>57 passed in 0.98s</strong> (exit <code>0</code>). Existing evaluator suite passes with the LGPL manager 2.10.0 compatibility source: directory iterators close on early matches, and packaging.version replaces removed distutils. See vendor/tentacles-manager/PROVENANCE.md.</p>
 <p>No test cases were added. Existing assertions and strict warning behavior remain active; repaired fixtures own their loops, sessions, files and configuration paths. Existing upstream platform skips and configured deselections are reported exactly.</p>
-<h2 id="final-build-commands">Final build commands</h2>
+<h2 id="historical-build-commands">Historical build commands</h2>
 <table>
 <thead>
 <tr>
@@ -118,8 +118,8 @@
 </tbody>
 </table>
 <p>Raw logs remain in the workspace maintenance evidence directory. The <a href="maintenance/verification.json">portable verification record</a> retains exact command arrays, exits, timing, runtime inventory and log filenames. Earlier failed attempts remain recorded and are not treated as successful final validation.</p>
-<h2 id="installed-dependency-versions">Installed dependency versions</h2>
-<p>This is the selected environment after locked synchronization; isolated wheel build dependencies are resolved by the build backend and recorded in build output.</p>
+<h2 id="historical-installed-dependency-versions">Historical installed dependency versions</h2>
+<p>This is the historical environment captured after its locked synchronization; isolated wheel build dependencies are resolved by the build backend and recorded in build output.</p>
 <table>
 <thead>
 <tr>
@@ -358,4 +358,5 @@
 </tr>
 </tbody>
 </table>
-<p>See <a href="ayu-develop.md">architecture</a> for source-linked component/sequence/workflow diagrams and <a href="development.md">development</a> for reproducible uv commands.</p></main></body></html>
+<p>See <a href="ayu-develop.md">architecture</a> for source-linked component/sequence/workflow diagrams and <a href="development.md">development</a> for reproducible uv commands.</p></main>
+</body></html>

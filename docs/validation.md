@@ -9,13 +9,13 @@ Selected runtime: **managed Python 3.15.0**, uv **0.13.0**; source commit `da572
 
 Recorded 2026-10-12T01:32:44.003848+08:00. Branch `feature/ayu_develop`; upstream default `upstream/master` is merged: **true**. Branch/tag synchronization records are retained in the workspace maintenance evidence. Feature branch publication is coordinated separately.
 
-Runtime: **CPython 3.14.8**, uv **0.13.0**, build backend `hatchling.build`. Tulipy 0.4.11b13 has no Python 3.15 distribution; Python 3.14.8 is selected.
+Historical runtime: **CPython 3.14.8**, uv **0.13.0**, build backend `hatchling.build`. Tulipy 0.4.11b13 has no Python 3.15 distribution; Python 3.14.8 was selected at this stage; the reviewed Python 3.15 migration above supersedes that fallback.
 
 Existing suite: **57 passed in 0.98s** (exit `0`). Existing evaluator suite passes with the LGPL manager 2.10.0 compatibility source: directory iterators close on early matches, and packaging.version replaces removed distutils. See vendor/tentacles-manager/PROVENANCE.md.
 
 No test cases were added. Existing assertions and strict warning behavior remain active; repaired fixtures own their loops, sessions, files and configuration paths. Existing upstream platform skips and configured deselections are reported exactly.
 
-## Final build commands
+## Historical build commands
 
 | Check | Exact command | Exit | Seconds |
 | --- | --- | ---: | ---: |
@@ -41,9 +41,9 @@ No test cases were added. Existing assertions and strict warning behavior remain
 
 Raw logs remain in the workspace maintenance evidence directory. The [portable verification record](maintenance/verification.json) retains exact command arrays, exits, timing, runtime inventory and log filenames. Earlier failed attempts remain recorded and are not treated as successful final validation.
 
-## Installed dependency versions
+## Historical installed dependency versions
 
-This is the selected environment after locked synchronization; isolated wheel build dependencies are resolved by the build backend and recorded in build output.
+This is the historical environment captured after its locked synchronization; isolated wheel build dependencies are resolved by the build backend and recorded in build output.
 
 | Distribution | Version |
 | --- | --- |
